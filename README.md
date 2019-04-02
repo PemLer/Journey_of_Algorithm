@@ -1,2 +1,2 @@
 # journey_of_leetcode
-leetcode和newcoder刷题记录
+leetcode和nowcoder刷题记录
