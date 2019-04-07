@@ -7,10 +7,14 @@ class Solution:
         """
         if not matrix or not matrix[0]:
             return False
-        l = len(matrix)
-        r = len(matrix[0])
-        for i in range(0,l):
-            for j in range(0,r):
-                if matrix[i][j] == target:
-                    return True
+        row, col = len(matrix), len(matrix[0])
+        up, right = 0, col-1
+        while up < row and right > -1:
+            if matrix[up][right] == target:
+                return True
+            elif matrix[up][right] < target:
+                up += 1
+            else:
+                right -= 1
         return False
+        
