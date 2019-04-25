@@ -1,12 +1,7 @@
 class Solution:
-    def countBits(self, num):
-        """
-        :type num: int
-        :rtype: List[int]
-        """
-        List1 = [0]
-        while len(List1) <= num:
-            List2 = [x+1 for x in List1]
-            List1 += List2
-        return List1[:num+1]
-
+    def countBits(self, num: int) -> List[int]:
+        dp = [0 for _ in range(num+1)]
+        for i in range(1, num+1):
+            dp[i] = dp[i>>1] + i%2
+        return dp
+        
