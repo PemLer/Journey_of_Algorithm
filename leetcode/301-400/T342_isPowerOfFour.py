@@ -1,16 +1,6 @@
 class Solution:
-    def isPowerOfFour(self, num):
+    def isPowerOfFour(self, num: int) -> bool:
         """
-        :type num: int
-        :rtype: bool
+        是2的幂次方并且与3的余数是1
         """
-        if num == 1:
-            return True
-        elif num == 0:
-            return False
-        else:
-            if num/4 != int(num/4):
-                return False
-            else:
-                return self.isPowerOfFour(int(num/4))
-        
+        return num > 0 and num & (num - 1) == 0 and num % 3 == 1
