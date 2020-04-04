@@ -2,15 +2,23 @@
 leetcode、AcWing和nowcoder刷题记录
 
 ## leetcode
-按题号在不同文件夹
+
 [001-100](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/001-100)
+
 [101-200](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/101-200)
+
 [201-300](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/201-300)
+
 [301-400](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/301-400)
+
 [401-500](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/401-500)
+
 [501-600](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/501-600)
+
 [601-700](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/601-700)
+
 [701-800](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/701-800)
+
 [801-](https://github.com/PemLer/Journey_of_leetcode/tree/master/leetcode/801-)
 
 ## AcWing
