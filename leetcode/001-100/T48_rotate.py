@@ -1,18 +1,15 @@
+from typing import List
+
 class Solution:
-    def rotate(self, matrix):
+    def rotate(self, matrix: List[List[int]]) -> None:
         """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
+        Do not return anything, modify matrix in-place instead.
         """
         n = len(matrix)
-        for i in range(0,n):
-            for j in range(0,i):
-                matrix[i][j],matrix[j][i] = matrix[j][i],matrix[i][j]
 
-        i = 0
-        j = n-1
-        while i < j:
-            for k in range(0,n):
-                matrix[k][i],matrix[k][j] = matrix[k][j],matrix[k][i]
-            i += 1; j -= 1
+        for i in range(n // 2):
+            matrix[i], matrix[n-i-1] = matrix[n-i-1],  matrix[i]
 
+        for i in range(n):
+            for j in range(i):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
