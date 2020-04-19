@@ -1,15 +1,9 @@
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        """
-        记录当前还可以跳的长度
-        """
-        step = nums[0]
-        for i in range(1, len(nums)):
-            if step > 0:
-                step -= 1
-                step = max(step, nums[i])
-            else:
-                break
-        else:
-            return True
+        n, pos = len(nums), 0
+        for i in range(n):
+            if i <= pos:
+                pos = max(pos, i + nums[i])
+                if pos >= n - 1:
+                    return True
         return False
