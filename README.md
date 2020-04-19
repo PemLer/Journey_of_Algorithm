@@ -1,10 +1,12 @@
-# journey_of_leetcode
+# Journey_of_Algorithm
 leetcode、AcWing和nowcoder算法题刷题记录
 
 ## 专题目录
 
 - [贪心算法题目总结](https://www.jianshu.com/p/fada9199e9ea)
 - [股票系列问题总结](https://www.jianshu.com/p/371cbb893711)
+- [动态规划总结](https://www.jianshu.com/p/b376fa5d99ea)
+- [单调栈题目总结](https://www.jianshu.com/p/11e525ae13b7)
 
 ## leetcode
 
