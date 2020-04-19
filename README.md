@@ -7,6 +7,7 @@ leetcode、AcWing和nowcoder算法题刷题记录
 - [股票系列问题总结](https://www.jianshu.com/p/371cbb893711)
 - [动态规划总结](https://www.jianshu.com/p/b376fa5d99ea)
 - [单调栈题目总结](https://www.jianshu.com/p/11e525ae13b7)
+- [排序算法](https://www.jianshu.com/p/325ed39d14d8)
 
 ## leetcode
 
