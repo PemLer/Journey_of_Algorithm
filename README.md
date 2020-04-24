@@ -1,5 +1,5 @@
 # Journey_of_Algorithm
-leetcode、AcWing和nowcoder算法题刷题记录
+leetcode、AcWing和牛客网算法题刷题记录
 
 ## 专题目录
 
