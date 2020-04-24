@@ -22,13 +22,13 @@ class Solution:
         return dp[n][m]
 
 
-# 二分 O(n*log(sum(nums)))
+# 二分 + 贪心 O(n*log(sum(nums)))
 class Solution2:
     def splitArray(self, nums: List[int], m: int) -> int:
         n = len(nums)
 
         def possible(guess):
-            """判断guess为答案时需要分成多少组"""
+            """贪心判断guess为答案时需要分成多少组"""
             total = 0
             count = 1
             for i in range(n):
