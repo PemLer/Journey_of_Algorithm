@@ -9,6 +9,7 @@ leetcode、AcWing和牛客网算法题刷题记录
 - [单调栈题目总结](https://www.jianshu.com/p/11e525ae13b7)
 - [典型栈问题](https://www.jianshu.com/p/e23fad0e5a73)
 - [排序算法](https://www.jianshu.com/p/325ed39d14d8)
+- [LRU和LFU缓存问题](https://www.jianshu.com/p/f1f11443a7b8)
 
 ## leetcode
 
