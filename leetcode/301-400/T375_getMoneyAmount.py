@@ -1,17 +1,7 @@
-class Solution(object):
-    def getMoneyAmount(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        if n == 0:
-            return 0
-        dp = [[0]*(n+1) for _ in range(0,n+1)]
-        """ dp[][i] = i + max(dp[1][i-1]+dp[i+1][n]) """
-        dp[0][0] = 0
-        for low in range(n,0,-1):
-            for high in range(low+1,n+1):
-                dp[low][high] = min(x + max(dp[low][x-1],dp[x+1][high]) for x in range(low,high))
-        return dp[1][n]
-
-
+class Solution:
+    def getMoneyAmount(self, n: int) -> int:
+        dp = [[0] * n for _ in range(n)]
+        for j in range(1, n):
+            for i in range(j-1, -1, -1):
+                dp[i][j] = min(k + 1 + max(dp[i][k - 1], dp[k + 1][j]) for k in range(i, j))  # k+1
+        return dp[0][-1]
