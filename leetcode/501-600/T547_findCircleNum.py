@@ -39,3 +39,39 @@ class Solution:
                             visited[j] = 1
                             queue.append(j)
         return count
+
+
+# 方法三 并查集
+class UnionFind:
+    def __init__(self, n):
+        self.par = [x for x in range(n)]
+
+    def find(self, x):
+        if x != self.par[x]:
+            self.par[x] = self.find(self.par[x])
+        return self.par[x]
+
+    def union(self, x, y):
+        self.par[self.find(x)] = self.find(y)
+
+    def same(self, x, y):
+        return self.find(x) == self.find(y)
+
+    def normalize(self):
+        for x in range(len(self.par)):
+            self.find(x)
+
+    def get_count(self):
+        self.normalize()
+        return len(set(self.par))
+
+
+class Solution:
+    def findCircleNum(self, M: List[List[int]]) -> int:
+        n = len(M)
+        uf = UnionFind(n)
+        for i in range(n):
+            for j in range(i + 1, n):
+                if M[i][j] == 1:
+                    uf.union(i, j)
+        return uf.get_count()
